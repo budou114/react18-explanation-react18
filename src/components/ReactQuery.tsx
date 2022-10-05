@@ -15,8 +15,8 @@ const fetchalbums = async () => {
 export const ReactQuery = () => {
   const { isLoading, error, data } = useQuery<Album[]>(['albums'], fetchalbums);
 
-  if (error) return <p>エラーです！</p>;
-  if (isLoading) return <p>ローディング中だよ〜</p>;
+  // if (error) return <p>エラーです！</p>;
+  // if (isLoading) return <p>ローディング中だよ〜</p>;
 
   return (
     <div>
